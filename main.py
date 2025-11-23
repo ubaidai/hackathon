@@ -4,7 +4,7 @@ from PIL import Image
 import numpy as np
 
 # ---- Load model once ----
-lr = joblib.load("model/logistic_regression.pkl")
+lr = joblib.load("logistic_regression.pkl")
 
 # ---- Page configuration ----
 st.set_page_config(
@@ -68,3 +68,4 @@ per_class_img = Image.open("perr_class_accuracy.png")
 st.image(per_class_img, caption="Per Class Accuracy", use_column_width=True)
 
 st.markdown("<h4 style='text-align: center; color: #6A5ACD;'>Built with ❤️ using Python, Streamlit & scikit-learn</h4>", unsafe_allow_html=True)
+
